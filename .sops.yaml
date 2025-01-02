@@ -1,0 +1,8 @@
+keys:
+  # public age key of ~/.ssh/id_ed25519
+  - &primary age1adalah7wjmla8ymmavwpaus3qny402tetdx29vvqnxd79qetzyqqm6qx9v
+creation_rules:
+  - path_regex: secrets/secrets.yaml$
+    key_groups:
+      - age:
+          - *primary
